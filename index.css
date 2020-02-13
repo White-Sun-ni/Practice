@@ -1,0 +1,121 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'MS Mincho';
+    background: #000;
+    width: 100%;
+    height: 100%;
+    background: #1c4e83;
+}
+
+header{
+    background-color: rgba(0,0,0,0);
+    border-bottom: none;
+    padding: 10px 0px;
+    box-sizing: border-box;
+}
+
+nav{
+    width: 100%;
+    height: 50px;
+    background: rgba(0,0,0,.8);
+    border-top: 1px solid rgba(255,255,255,.2);
+    border-bottom: none;
+    position: fixed;
+    top: 0;
+}
+
+nav ul{
+    display: flex;
+    margin: 0;
+    padding: 0 100px;
+    font-size: 25px;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    display:block;
+    color: white;
+    padding: 0 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 50px;
+}
+
+ul li a:hover{
+    color: #4ff4ff;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+}
+
+container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo{
+    margin-top: -80vh;
+}
+
+.welcom{
+    color: white;
+    font-size: 140px;
+    text-shadow: 4px 4px 6px #ffaeae, -4px 4px 6px #8f8fff;
+    text-align: center;
+}
+
+.hello{
+    color: white;
+    font-size: 100px;
+    text-shadow: 4px 4px 6px #ffaeae, -4px 4px 6px #8f8fff;
+    text-align: center;
+}
+
+section.sec2{
+    padding: 100px;
+    box-sizing: border-box;
+    height: auto;
+}
+
+h2.section_title{
+    color: white;
+    font-size: 60px;
+    text-shadow: 1px 1px 2px #ffaeae, -1px 1px 2px #8f8fff;
+    text-align: center;
+}
+
+h3.section_content{
+    color: white;
+    font-size: 30px;
+    text-shadow: 1px 1px 2px #ffaeae, -1px 1px 2px #8f8fff;
+    text-align: center;
+}
+
+section.sec3{
+    padding: 30px;
+    box-sizing: border-box;
+    height: auto;
+}
+
+.swiper-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    background: #fff;
+}
