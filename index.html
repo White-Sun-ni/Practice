@@ -1,0 +1,92 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeFile="index.aspx.cs" Inherits="index" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+<link rel="stylesheet" type="text/css" href="swiper.min.css" />
+<link rel="stylesheet" href="index.css" type="text/css"/>
+    <title></title>
+</head>
+<body>
+    <header>
+        <a class="menu-icon">@</a>
+        <nav>
+            <ul id="header_contents">
+                <li>
+                    <a id="header_section_description" class="drawer-menu-item" href="#jump1">私は誰？</a>
+                </li>
+                <li>
+                    <a id="header_section_movie" href="#jump2">おすすめ動画</a>
+                </li>
+                <li>
+                    <a id="header_contributors">製作者</a>
+                </li>
+                <li>
+                    <a id="header_contact">お問い合わせ</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="sec1" style="background-image: url('http://localhost:57015/images/30486951514161445077.jpg');background-size:cover"></section>
+        <div class="container">
+            <div class="logo">
+                <h1 id="welcom" class="welcom">ようこそ！</h1>
+                <h1 id="hello" class="hello">Sun日のウェブページ</h1>
+            </div>
+        </div>
+    <section id="se2" class="sec2"></section>
+        <div id="jump1" style="padding:20px;background-color:green;opacity:0.0;">-------------</div>      
+        <h2 class="section_title" id="header_section">私は誰？</h2>
+        <center>
+            <img src="https://i.imgur.com/gNgcRXh.jpg" width="800" />
+        </center>
+        <h3 class="section_content">○○○です</h3>
+        <h3 class="section_content">ゲーム好き、特技はウェブページの開発</h3>
+        <h3 class="section_content">好きのゲームシリーズはニーアです</h3>
+        <h3 class="section_content">今はおすすめのオンラインゲームは</h3>
+        <h3 class="section_content">ファイナルファンタジーXIV:新生エオルゼア</h3>
+    <section class="sec3"></section>
+        <div id="jump2" style="padding:20px;background-color:green;opacity:0.0;">-------------</div> 
+        <h2 class="section_title" id="section_movie">おすすめ動画</h2>
+      <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"></div>
+      <div class="swiper-slide"></div>
+      <div class="swiper-slide"></div>
+      <div class="swiper-slide"></div>
+      <div class="swiper-slide"></div>
+      <div class="swiper-slide"></div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+    <script type="text/javascript" src="swiper.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            loop: true,
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflowEffect: {
+                rotate: 60,
+                stretch: 0,
+                depth: 100,
+                modifier: 5,
+                slideShadows: true
+            },
+            pagination: {
+                el: '.swiper-pagination'
+            },
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false
+            }
+        });
+  </script>
+</body>
+</html>
