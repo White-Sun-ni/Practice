@@ -12,6 +12,7 @@
     <title></title>
 </head>
 <body>
+    <!--各項目へのジャンプ用ヘッダ-->
     <header>
         <a class="menu-icon">@</a>
         <nav>
@@ -23,7 +24,10 @@
                     <a id="header_section_movie" href="#jump2">おすすめ動画</a>
                 </li>
                 <li>
-                    <a id="header_contributors">製作者</a>
+                    <a id="header_list" href="#jump3">プレイリスト</a>
+                </li>
+                <li>
+                    <a id="header_contributors">リンク</a>
                 </li>
                 <li>
                     <a id="header_contact">お問い合わせ</a>
@@ -31,6 +35,7 @@
             </ul>
         </nav>
     </header>
+    <a class="topicon" href="#"><img class="topimg" src="images/WPVG_icon_2016.png" /></a>
     <section class="sec1" style="background-image: url('http://localhost:57015/images/30486951514161445077.jpg');background-size:cover"></section>
         <div class="container">
             <div class="logo">
@@ -39,7 +44,7 @@
             </div>
         </div>
     <section id="se2" class="sec2"></section>
-        <div id="jump1" style="padding:20px;background-color:green;opacity:0.0;">-------------</div>      
+        <div id="jump1" style="opacity:0.0;">-------------</div>      
         <h2 class="section_title" id="header_section">私は誰？</h2>
         <center>
             <img src="https://i.imgur.com/gNgcRXh.jpg" width="800" />
@@ -50,42 +55,106 @@
         <h3 class="section_content">今はおすすめのオンラインゲームは</h3>
         <h3 class="section_content">ファイナルファンタジーXIV:新生エオルゼア</h3>
     <section class="sec3"></section>
-        <div id="jump2" style="padding:20px;background-color:green;opacity:0.0;">-------------</div> 
+        <div id="jump2" style="opacity:0.0;">-------------</div> 
         <h2 class="section_title" id="section_movie">おすすめ動画</h2>
-      <div class="swiper-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/SoIT79AXaSI"></iframe>
+    <!-- swiper -->
+    <div class="swiper-container">
     <div class="swiper-wrapper">
-      <div class="swiper-slide"></div>
-      <div class="swiper-slide"></div>
-      <div class="swiper-slide"></div>
-      <div class="swiper-slide"></div>
-      <div class="swiper-slide"></div>
-      <div class="swiper-slide"></div>
+        <div class="swiper-slide">
+            <div class="imgBX">
+                <a href="https://youtu.be/Hgdw7N2VUMU" target="_blank">
+                <img src="images/station.png"/>
+                </a>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="imgBX">
+                <a href="https://youtu.be/bgMXtA23rTY" target="_blank">
+                <img src="images/lighting.png"/>
+                </a>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="imgBX">
+                <a href="https://youtu.be/VQi221mkCZk" target="_blank">
+                <img src="images/kigameshu.png"/>
+                </a>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="imgBX">
+                <a href="https://youtu.be/wYPw5rMnvnQ" target="_blank">
+                <img src="images/ff_0.png"/>
+                </a>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="imgBX">
+                <a href="https://youtu.be/yTHnHjQ1F_c" target="_blank">
+                <img src="images/dq11.png"/>
+                </a>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="imgBX">
+                <a href="https://youtu.be/l08HykSNRFY" target="_blank">
+                <img src="images/tifa.png"/>
+                </a>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="imgBX">
+                <a href="https://youtu.be/CXImZZ7kcd4" target="_blank">
+                <img src="images/cloud.png"/>
+                </a>
+            </div>
+        </div>
     </div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
     <!-- Add Pagination -->
     <div class="swiper-pagination"></div>
-  </div>
+    </div>
+    <br />
+    <div id="jump3" style="opacity:0.0;">-------------</div> 
+    <h2 class="section_title" id="section_list">プレイリスト</h2>
+    <div id="game_live">
+        <div style="background: rgba(0,0,0,0.2) none repeat scroll 0% 0%; padding: 10px;">
+            <h3>
+                <a id="game_live_title" href="https://youtu.be/yX12Vwq99qQ" target="_blank" rel="noopener noreferrer">再生リスト</a>
+            </h3>
+            <br />
+            <div style="display: flex; width: 100%; justify-content: space-between;"></div>
+        </div>
+    </div>
     <script type="text/javascript" src="swiper.min.js"></script>
     <script>
         var swiper = new Swiper('.swiper-container', {
-            loop: true,
+            
             effect: 'coverflow',
             grabCursor: true,
             centeredSlides: true,
             slidesPerView: 'auto',
+            loop: true,
             coverflowEffect: {
-                rotate: 60,
+                rotate: 5,
                 stretch: 0,
                 depth: 100,
-                modifier: 5,
+                modifier: 7,
                 slideShadows: true
             },
             pagination: {
                 el: '.swiper-pagination'
             },
             autoplay: {
-                delay: 2500,
+                delay: 3000,
                 disableOnInteraction: false
-            }
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
         });
   </script>
 </body>
