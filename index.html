@@ -1,14 +1,12 @@
-<%@ Page Language="C#" AutoEventWireup="true" CodeFile="index.aspx.cs" Inherits="index" %>
-
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
-<link rel="stylesheet" type="text/css" href="swiper.min.css" />
-<link rel="stylesheet" href="index.css" type="text/css"/>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="swiper.min.css" />
+    <link rel="stylesheet" href="index.css" type="text/css" />
     <title></title>
 </head>
 <body>
@@ -36,15 +34,17 @@
         </nav>
     </header>
     <a class="topicon" href="#"><img class="topimg" src="images/WPVG_icon_2016.png" /></a>
-    <section class="sec1" style="background-image: url('http://localhost:57015/images/30486951514161445077.jpg');background-size:cover"></section>
+    <section class="sec1">
+        <img class="sec1_bg" src="images/30486951514161445077.jpg" />
         <div class="container">
             <div class="logo">
                 <h1 id="welcom" class="welcom">ようこそ！</h1>
                 <h1 id="hello" class="hello">Sun日のウェブページ</h1>
             </div>
         </div>
-    <section id="se2" class="sec2"></section>
-        <div id="jump1" style="opacity:0.0;">-------------</div>      
+    </section>
+    <section id="se2" class="sec2">
+        <div id="jump1" style="opacity:0.0;">-------------</div>
         <h2 class="section_title" id="header_section">私は誰？</h2>
         <center>
             <img src="https://i.imgur.com/gNgcRXh.jpg" width="800" />
@@ -54,84 +54,123 @@
         <h3 class="section_content">好きのゲームシリーズはニーアです</h3>
         <h3 class="section_content">今はおすすめのオンラインゲームは</h3>
         <h3 class="section_content">ファイナルファンタジーXIV:新生エオルゼア</h3>
-    <section class="sec3"></section>
-        <div id="jump2" style="opacity:0.0;">-------------</div> 
+    </section>
+    <section id="se3">
+        <div id="jump2" style="opacity:0.0;">-------------</div>
         <h2 class="section_title" id="section_movie">おすすめ動画</h2>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/SoIT79AXaSI"></iframe>
-    <!-- swiper -->
-    <div class="swiper-container">
-    <div class="swiper-wrapper">
-        <div class="swiper-slide">
-            <div class="imgBX">
-                <a href="https://youtu.be/Hgdw7N2VUMU" target="_blank">
-                <img src="images/station.png"/>
-                </a>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/SoIT79AXaSI"></iframe>
+        <!-- swiper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="imgBX">
+                        <a href="https://youtu.be/Hgdw7N2VUMU" target="_blank">
+                            <img src="images/station.png" />
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="imgBX">
+                        <a href="https://youtu.be/bgMXtA23rTY" target="_blank">
+                            <img src="images/lighting.png" />
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="imgBX">
+                        <a href="https://youtu.be/VQi221mkCZk" target="_blank">
+                            <img src="images/kigameshu.png" />
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="imgBX">
+                        <a href="https://youtu.be/wYPw5rMnvnQ" target="_blank">
+                            <img src="images/ff_0.png" />
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="imgBX">
+                        <a href="https://youtu.be/yTHnHjQ1F_c" target="_blank">
+                            <img src="images/dq11.png" />
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="imgBX">
+                        <a href="https://youtu.be/l08HykSNRFY" target="_blank">
+                            <img src="images/tifa.png" />
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="imgBX">
+                        <a href="https://youtu.be/CXImZZ7kcd4" target="_blank">
+                            <img src="images/cloud.png" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+        <br />
+    </section>
+    <section class="sec4">
+
+        <div class="game_live" id="game_live">
+            <div id="jump3" style="opacity:0.0;">-------------</div>
+            <h2 class="section_title" id="section_list">プレイリスト</h2>
+            <div style="background: rgba(0,0,0,0.2) none repeat scroll 0% 0%; padding: 20px;">
+                <h3>
+                    <a id="game_live_title" href="https://youtu.be/yX12Vwq99qQ" target="_blank" rel="noopener noreferrer">再生リスト</a>
+                </h3>
+                <br />
+                <div class="vid_lis_con" style="display: flex; width: 100%; justify-content: space-between;">
+                    <div class="vid_list" id="vid_list">
+                        <div class="video" onclick="document.getElementById('vid_frame').src = 'https://youtu.be/yX12Vwq99qQ'">
+                            <div class="thumb">
+                                <img src="http://img.youtube.com/vi/yX12Vwq99qQ/0.jpg" alt="" />
+                            </div>
+                        </div>
+                        <div class="video" onclick="document.getElementById('vid_frame').src = 'https://youtu.be/rQgIuyt1cvA'">
+                            <div class="thumb">
+                                <img src="http://img.youtube.com/vi/rQgIuyt1cvA/1.jpg" />
+                            </div>
+                        </div>
+                        <div class="video" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/watch?v=ygATob9xnPE&list=PLQKz0ptkdZfiErc_JFXqmsyaZw_0nB5Cl&index=3'">
+                            <div class="thumb">
+                                <img src="http://img.youtube.com/vi/ygATob9xnPE/2.jpg" />
+                            </div>
+                        </div>
+                        <div class="video" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/watch?v=pKCX-MyKiiU&list=PLQKz0ptkdZfiErc_JFXqmsyaZw_0nB5Cl&index=4'">
+                            <div class="thumb">
+                                <img src="http://img.youtube.com/vi/pKCX-MyKiiU/3.jpg" />
+                            </div>
+                        </div>
+                        <div class="video" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/watch?v=g5tZF8dTDsU&list=PLQKz0ptkdZfiErc_JFXqmsyaZw_0nB5Cl&index=5'">
+                            <div class="thumb">
+                                <img src="http://img.youtube.com/vi/g5tZF8dTDsU/4.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="video_box">
+                    <div class="video_wrapper">
+                        <iframe id="vid_frame" width="560" height="315" src="https://www.youtube.com/embed/yX12Vwq99qQ" frameborder="0"></iframe>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="swiper-slide">
-            <div class="imgBX">
-                <a href="https://youtu.be/bgMXtA23rTY" target="_blank">
-                <img src="images/lighting.png"/>
-                </a>
-            </div>
-        </div>
-        <div class="swiper-slide">
-            <div class="imgBX">
-                <a href="https://youtu.be/VQi221mkCZk" target="_blank">
-                <img src="images/kigameshu.png"/>
-                </a>
-            </div>
-        </div>
-        <div class="swiper-slide">
-            <div class="imgBX">
-                <a href="https://youtu.be/wYPw5rMnvnQ" target="_blank">
-                <img src="images/ff_0.png"/>
-                </a>
-            </div>
-        </div>
-        <div class="swiper-slide">
-            <div class="imgBX">
-                <a href="https://youtu.be/yTHnHjQ1F_c" target="_blank">
-                <img src="images/dq11.png"/>
-                </a>
-            </div>
-        </div>
-        <div class="swiper-slide">
-            <div class="imgBX">
-                <a href="https://youtu.be/l08HykSNRFY" target="_blank">
-                <img src="images/tifa.png"/>
-                </a>
-            </div>
-        </div>
-        <div class="swiper-slide">
-            <div class="imgBX">
-                <a href="https://youtu.be/CXImZZ7kcd4" target="_blank">
-                <img src="images/cloud.png"/>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-    <!-- Add Pagination -->
-    <div class="swiper-pagination"></div>
-    </div>
-    <br />
-    <div id="jump3" style="opacity:0.0;">-------------</div> 
-    <h2 class="section_title" id="section_list">プレイリスト</h2>
-    <div id="game_live">
-        <div style="background: rgba(0,0,0,0.2) none repeat scroll 0% 0%; padding: 10px;">
-            <h3>
-                <a id="game_live_title" href="https://youtu.be/yX12Vwq99qQ" target="_blank" rel="noopener noreferrer">再生リスト</a>
-            </h3>
-            <br />
-            <div style="display: flex; width: 100%; justify-content: space-between;"></div>
-        </div>
-    </div>
+    </section>
     <script type="text/javascript" src="swiper.min.js"></script>
     <script>
         var swiper = new Swiper('.swiper-container', {
-            
+
             effect: 'coverflow',
             grabCursor: true,
             centeredSlides: true,
@@ -156,6 +195,7 @@
                 prevEl: '.swiper-button-prev',
             },
         });
-  </script>
+    </script>
 </body>
 </html>
+
