@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
     <link rel="stylesheet" type="text/css" href="swiper.min.css" />
     <link rel="stylesheet" href="index.css" type="text/css" />
+    <link href="assets/css/brands.css" rel="stylesheet" />
+    <link href="assets/css/fontawesome.css" rel="stylesheet" />
+    <link href="assets/css/solid.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/a16f3d739c.js" crossorigin="anonymous"></script>
     <title></title>
 </head>
 <body>
@@ -25,10 +29,10 @@
                     <a id="header_list" href="#jump3">プレイリスト</a>
                 </li>
                 <li>
-                    <a id="header_contributors">リンク</a>
+                    <a id="header_contributors" href="#jump4">リンク</a>
                 </li>
                 <li>
-                    <a id="header_contact">お問い合わせ</a>
+                    <a id="header_contact" href="#jump5">お問い合わせ</a>
                 </li>
             </ul>
         </nav>
@@ -49,13 +53,13 @@
         <center>
             <img src="https://i.imgur.com/gNgcRXh.jpg" width="800" />
         </center>
-        <h3 class="section_content">○○○です</h3>
+        <h3 class="section_content">White-Sun-niです</h3>
         <h3 class="section_content">ゲーム好き、特技はウェブページの開発</h3>
         <h3 class="section_content">好きのゲームシリーズはニーアです</h3>
         <h3 class="section_content">今はおすすめのオンラインゲームは</h3>
         <h3 class="section_content">ファイナルファンタジーXIV:新生エオルゼア</h3>
     </section>
-    <section id="se3">
+    <section class="sec3" id="sec3">
         <div id="jump2" style="opacity:0.0;">-------------</div>
         <h2 class="section_title" id="section_movie">おすすめ動画</h2>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/SoIT79AXaSI"></iframe>
@@ -131,29 +135,49 @@
                 <br />
                 <div class="vid_lis_con" style="display: flex; width: 100%; justify-content: space-between;">
                     <div class="vid_list" id="vid_list">
-                        <div class="video" onclick="document.getElementById('vid_frame').src = 'https://youtu.be/yX12Vwq99qQ'">
+                        <div class="video" onclick="document.getElementById('vid_frame').src = 'https://www.youtube.com/embed/yX12Vwq99qQ'">
                             <div class="thumb">
-                                <img src="http://img.youtube.com/vi/yX12Vwq99qQ/0.jpg" alt="" />
+                                <img src="http://img.youtube.com/vi/yX12Vwq99qQ/0.jpg"/>
                             </div>
                         </div>
-                        <div class="video" onclick="document.getElementById('vid_frame').src = 'https://youtu.be/rQgIuyt1cvA'">
+                        <div class="video" onclick="document.getElementById('vid_frame').src = 'https://www.youtube.com/embed/rQgIuyt1cvA'">
                             <div class="thumb">
-                                <img src="http://img.youtube.com/vi/rQgIuyt1cvA/1.jpg" />
+                                <img src="http://img.youtube.com/vi/rQgIuyt1cvA/0.jpg" />
                             </div>
                         </div>
-                        <div class="video" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/watch?v=ygATob9xnPE&list=PLQKz0ptkdZfiErc_JFXqmsyaZw_0nB5Cl&index=3'">
+                        <div class="video" onclick="document.getElementById('vid_frame').src = 'https://www.youtube.com/embed/ygATob9xnPE'">
                             <div class="thumb">
-                                <img src="http://img.youtube.com/vi/ygATob9xnPE/2.jpg" />
+                                <img src="http://img.youtube.com/vi/ygATob9xnPE/0.jpg" />
                             </div>
                         </div>
-                        <div class="video" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/watch?v=pKCX-MyKiiU&list=PLQKz0ptkdZfiErc_JFXqmsyaZw_0nB5Cl&index=4'">
+                        <div class="video" onclick="document.getElementById('vid_frame').src = 'https://www.youtube.com/embed/pKCX-MyKiiU'">
                             <div class="thumb">
-                                <img src="http://img.youtube.com/vi/pKCX-MyKiiU/3.jpg" />
+                                <img src="http://img.youtube.com/vi/pKCX-MyKiiU/0.jpg" />
                             </div>
                         </div>
-                        <div class="video" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/watch?v=g5tZF8dTDsU&list=PLQKz0ptkdZfiErc_JFXqmsyaZw_0nB5Cl&index=5'">
+                        <div class="video" onclick="document.getElementById('vid_frame').src = 'https://www.youtube.com/embed/g5tZF8dTDsU'">
                             <div class="thumb">
-                                <img src="http://img.youtube.com/vi/g5tZF8dTDsU/4.jpg" />
+                                <img src="http://img.youtube.com/vi/g5tZF8dTDsU/0.jpg" />
+                            </div>
+                        </div>
+                        <div class="video" onclick="document.getElementById('vid_frame').src = 'https://www.youtube.com/embed/ureHpmMTmgw'">
+                            <div class="thumb">
+                                <img src="http://img.youtube.com/vi/ureHpmMTmgw/0.jpg" />
+                            </div>
+                        </div>
+                        <div class="video" onclick="document.getElementById('vid_frame').src = 'https://www.youtube.com/embed/XAiQgCt1Rns'">
+                            <div class="thumb">
+                                <img src="http://img.youtube.com/vi/XAiQgCt1Rns/0.jpg" />
+                            </div>
+                        </div>
+                        <div class="video" onclick="document.getElementById('vid_frame').src = 'https://www.youtube.com/embed/_L9-xvfV6MQ'">
+                            <div class="thumb">
+                                <img src="http://img.youtube.com/vi/_L9-xvfV6MQ/0.jpg" />
+                            </div>
+                        </div>
+                        <div class="video" onclick="document.getElementById('vid_frame').src = 'https://www.youtube.com/embed/TUK8lt3grRo'">
+                            <div class="thumb">
+                                <img src="http://img.youtube.com/vi/TUK8lt3grRo/0.jpg" />
                             </div>
                         </div>
                     </div>
@@ -164,6 +188,54 @@
                         <iframe id="vid_frame" width="560" height="315" src="https://www.youtube.com/embed/yX12Vwq99qQ" frameborder="0"></iframe>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+    <section class="sec5">
+        <div id="jump4" style="opacity:0.0;">-------------</div>
+        <h2 class="section_title" id="section_list">リンク</h2>
+            <div class="link_box">
+                <h2 class="you_font">
+                    <i class="fab fa-youtube"></i>YouTube
+                </h2>
+                <a href="https://www.youtube.com/channel/UCjif1nRwAF1RnntvIe2bK0Q" target="_blank" rel="noopener noreferrer">Sun日</a>
+            </div>
+        <div class="link_box">
+            <h2 class="you_font">
+                <i class="fab fa-twitter"></i>Twitter
+            </h2>
+            <div class="profile">
+                <div>
+                    <a class="user" href="https://twitter.com/nonbiriSun" target="_blank" rel="noopener noreferrer">
+                        <div class="profile_t">
+                            <h3>のんびり</h3>
+                            ＠nonbiriSun
+                        </div>
+                        <div class="image">
+                            <img class="ticon" src="images/Xlw7KuCx_400x400.jpeg" />
+                        </div>
+                    </a>
+                    <a class="twitter-timeline" data-height="500" data-dnt="true" data-theme="dark" data-chrome="nofooter noscrollbar"
+                       href="https://twitter.com/nonbiriSun?ref_src=twsrc%5Etfw">Tweets by nonbiriSun</a>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+                </div>
+            </div>
+        </div>
+        <div class="link_box">
+            <div id="jump5" style="opacity:0.0;">-------------</div>
+            <h2 class="you_font">
+                <i class="fas fa-envelope"></i>Gmail
+            </h2>
+            <div>
+                <h2 class="you_font">yioyio6@gmail.com</h2>
+            </div>
+        </div>
+        <div class="link_box">
+            <h2 class="you_font">
+                <i class="fab fa-github"></i>製作者
+            </h2>
+            <div>
+                <a href="https://github.com/White-Sun-ni">White-Sun-ni</a>
             </div>
         </div>
     </section>
