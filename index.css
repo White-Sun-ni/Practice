@@ -90,9 +90,13 @@ section.sec2{
     padding: 100px;
     box-sizing: border-box;
     height: auto;
+    background: linear-gradient(to left, #7995f7, #1c4e83);
 }
 
 h2.section_title{
+    margin-bottom: 20px;
+    margin-top: -50px;
+    padding-top: calc(50px + 6vh);
     color: white;
     font-size: 60px;
     text-shadow: 1px 1px 2px #ffaeae, -1px 1px 2px #8f8fff;
@@ -106,10 +110,11 @@ h3.section_content{
     text-align: center;
 }
 
-section.sec3{
+.sec3{
     padding: 30px;
     box-sizing: border-box;
     height: auto;
+    background: linear-gradient(to left, #7995f7, #1c4e83);
 }
 
 .swiper-container {
@@ -237,15 +242,9 @@ a{
     transition: all 0.3s ease 0s;
 }
 
-.thumb {
-	overflow:hidden;
-	height: 120px;
-}
-
 .thumb img {
-	width: 100%;
+	width: 175px;
 	position: relative;
-	top: -13px;
 }
 
 .video_box{
@@ -257,4 +256,91 @@ a{
 .sec4{
     display: flex;
     padding: 100px 120px 120px;
+    background: linear-gradient(to left, #7995f7, #1c4e83);
+}
+
+.sec5{
+    background:  linear-gradient(to left, #7995f7, #1c4e83);
+    padding: 50px 80px 30px 80px;
+    text-align: center;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.link_box{
+    padding: 30px 0;
+}
+
+i.fab{
+    margin-right: 8px;
+}
+
+.you_font{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 40px;
+    color: white;
+}
+
+a:hover{
+    color: #4ff4ff;
+}
+
+.profile{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+    text-align: center; 
+}
+
+.profile a{
+    display: flex;
+    text-decoration: none;
+    margin: 5px;
+    border-radius: 4px;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.profile_t{
+    margin-top: 20px;
+}
+
+.profile .image{
+    text-align: center;
+    margin-left: 5px;
+}
+
+.profile img{
+    align-self: center;
+    border-radius: 100%;
+    width: 120px;
+    max-width: 100%;
+}
+
+.twitter-timeline{
+    position: static;
+    visibility: visible;
+    display: inline-block;
+    width: 100%;
+    height: 500px;
+    padding: 0px;
+    border: medium none;
+    max-width: 100%;
+    min-width: 180px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    min-height: 200px;
+}
+
+i.fas{
+    margin-right: 8px;
+}
+
+.giticon{
+    align-self: center;
+    border-radius: 100%;
+    width: 120px;
+    max-width: 100%;
 }
