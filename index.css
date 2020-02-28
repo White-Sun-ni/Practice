@@ -57,15 +57,6 @@ header ul li a:hover{
     display: none;
 }
 
-@media (max-width: 64em) {
-    header {
-	background-color: transparent;
-    }
-    .menu-icon{
-        display: block;
-    }
-  }
-
 .sec1{
     height: 100vh;
 }
