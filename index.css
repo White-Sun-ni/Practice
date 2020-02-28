@@ -59,7 +59,7 @@ header ul li a:hover{
 
 @media (max-width: 64em) {
     header {
-
+	background-color: transparent;
     }
     .menu-icon{
         display: block;
