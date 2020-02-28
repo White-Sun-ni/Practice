@@ -51,12 +51,6 @@ header ul li a:hover{
     color: #4ff4ff;
 }
 
-.menu-icon{
-    color: white;
-    cursor: pointer;
-    display: none;
-}
-
 .sec1{
     height: 100vh;
 }
