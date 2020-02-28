@@ -96,7 +96,7 @@ section.sec2{
     padding: 100px;
     box-sizing: border-box;
     height: auto;
-    background: linear-gradient(to left, #7995f7, #1c4e83);
+    background: linear-gradient(to left, #000, #1c4e83);
 }
 
 h2.section_title{
@@ -262,11 +262,11 @@ a{
 .sec4{
     display: flex;
     padding: 100px 120px 120px;
-    background: linear-gradient(to left, #7995f7, #1c4e83);
+    background: linear-gradient(to left, #000, #1c4e83);
 }
 
 .sec5{
-    background:  linear-gradient(to left, #7995f7, #1c4e83);
+    background:  linear-gradient(to left, #000, #1c4e83);
     padding: 50px 80px 30px 80px;
     text-align: center;
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
